@@ -1,3 +1,26 @@
 body {
 	background-color: rgb(152, 199, 178);
+	background: url("../images/2.jpg");
+	background-size: 800px 600px;
+	background-repeat: no-repeat;
+}
+
+.login-div {
+  height:200px;
+  width:200;
+	background: rgb(205, 250, 146);
+	position: absolute;
+  left: 50%;
+  margin-left: -100px;
+}
+.login-div label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    /*width: 250px;*/
+    text-align: right;
+}
+.login-div input {
+  display: inline-block;
+  float: right;
 }

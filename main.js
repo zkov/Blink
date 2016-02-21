@@ -8,7 +8,11 @@ var mainWindow = null;
 
 
 function windowObj(width, height){
-	return new BrowserWindow({width: width, height: height});
+	return new BrowserWindow(
+		{
+			width: width,
+			height: height
+		});
 }
 
 app.on('window-all-closed', function() {
@@ -18,7 +22,7 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', function() {
-	mainWindow = windowObj(300, 300);
+	mainWindow = windowObj(800, 600);
 	mainWindow.loadURL(`file://${__dirname}/index.html`);
 	//mainWindow.webContents.openDevTools();
 	mainWindow.on('closed', function () {
