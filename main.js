@@ -6,7 +6,6 @@ const BrowserWindow = electron.BrowserWindow;
 
 var mainWindow = null;
 
-
 function windowObj(width, height){
 	return new BrowserWindow({width: width, height: height});
 }
